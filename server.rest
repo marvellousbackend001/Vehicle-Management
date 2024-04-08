@@ -1,0 +1,35 @@
+###
+POST http://localhost:1000/vehicles
+Content-Type: application/json
+
+{
+    "make":"toyota", 
+    "model":"camry", 
+    "year": "2021", 
+    "color": "black",
+     "VIN":"1HGCM82633A123456",
+     "licensePlateNumber":"abc3244",
+     "odometerReading":"12345"
+}
+
+###
+GET http://localhost:1000/vehicles
+Content-Type: application/json
+
+###
+PUT http://localhost:1000/vehicles/5
+Content-Type: application/json
+
+{
+    "make":"toyota", 
+    "model":"camry", 
+    "year": "2015", 
+    "color": "black",
+    "VIN":"1HGCM87773A123456",
+     "licensePlateNumber":"abc3994",
+     "odometerReading":"246345"
+}
+
+
+###
+DELETE http://localhost:1000/vehicles/2
